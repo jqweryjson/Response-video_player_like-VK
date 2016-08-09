@@ -1,0 +1,38 @@
+@import 'common';
+
+.player {
+	position: relative;
+	width:900px;
+	height: 400px;
+	background: #345444;
+	overflow: auto;
+}
+.main_video {
+	position: fixed;
+}
+.player {
+
+}
+.more_video {
+	margin-bottom: 20px;
+	img {
+		display: block;
+		float: left;
+	}
+	span {
+		margin-left: 10px;
+	}
+	p {
+		margin: 0;
+
+	}
+}
+section {
+	color:#fff;
+	position: relative;
+	float: right;
+	display: block;
+	margin-right: 10px;
+	padding: 10px;
+	background-color: #000;
+}
