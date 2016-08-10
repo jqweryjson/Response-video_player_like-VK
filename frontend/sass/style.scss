@@ -1,37 +1,58 @@
 @import 'common';
 
-.player {
-	position: relative;
-	width:900px;
-	height: 400px;
-	background: #345444;
-	overflow: auto;
+section {
+	display: block;
+	height: auto;
+	max-width: 100%;
 }
-.main_video {
-	position: fixed;
-}
-.player {
 
+.container{
+	height: 100%;
+	position: relative;
 }
+
+.video_container {
+	float: left;
+}
+
+.scroll_video {
+	padding: 10px;
+	width: 400px;
+	color: white;
+	height: 315px;
+	background: #000;
+	float: left;
+	//margin-left: 10px;
+	overflow: auto;
+	p {
+		margin-bottom: 10px;
+	}
+}
+
 .more_video {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	img {
 		display: block;
 		float: left;
 	}
-	span {
-		margin-left: 10px;
-	}
-	p {
-		margin: 0;
+	a {
+		margin-left: 5px;
 	}
 }
-section {
-	color:#fff;
-	position: relative;
-	float: right;
-	display: block;
-	margin-right: 10px;
-	padding: 10px;
-	background-color: #000;
+.player__loader {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #ccc;
+  z-index: 20;
+  opacity: 1;
+  visibility: visible;
+  animation: hide-loader 200ms ease-out 5000ms forwards;
 }
+@keyframes hide-loader {  
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }

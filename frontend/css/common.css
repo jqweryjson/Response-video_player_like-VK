@@ -18,3 +18,9 @@ ul {
   height: 0;
   clear: both;
   visibility: hidden; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+p {
+  margin: 0; }
