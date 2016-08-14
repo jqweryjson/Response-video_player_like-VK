@@ -21,8 +21,22 @@ ul {
 	visibility: hidden;
 }
 body {
+	background-image: url('../img/background.png') ;
+	background-repeat: no-repeat;
+	background-position: top center;
 	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	margin:0;
 }
 p {
 	margin:0;
+}
+span {
+	display: block;
+}
+img {
+	display: inline-block;
+}
+hr {
+	margin: 0;
 }

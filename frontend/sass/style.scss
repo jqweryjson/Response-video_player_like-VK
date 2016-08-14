@@ -1,58 +1,87 @@
 @import 'common';
 
-section {
-	display: block;
-	height: auto;
-	max-width: 100%;
-}
-
-.container{
-	height: 100%;
+.video_player {
 	position: relative;
+	width: 1000px;
+	//height: 400px;
+	background-color: #000;
 }
-
-.video_container {
-	float: left;
+.main_video {
+	display: inline-block;
 }
-
 .scroll_video {
-	padding: 10px;
-	width: 400px;
-	color: white;
-	height: 315px;
-	background: #000;
-	float: left;
-	//margin-left: 10px;
+	width: 320px;
+	height: 400px;
+	position: fixed;
+	display: inline-block;
+	color: #fff;
 	overflow: auto;
-	p {
-		margin-bottom: 10px;
-	}
+	padding: 10px;
+	img {
+		width: 100px;
+		height: 55px
+	 }
 }
 
-.more_video {
-	margin-bottom: 10px;
-	img {
-		display: block;
-		float: left;
+.preview {
+	display: inline-block;
+}
+.description {
+	display: inline-block;
+	position: relative;
+	top: -20px;
+	.cnt {
+		color: #7A7A7A;
 	}
+}
+.content_title {
+	border: 1px solid #3F497FFF;
+	width: 700px;
+	padding: 20px;
+	color:#4B6C94;
+	background-color: #fff;
 	a {
-		margin-left: 5px;
+		color:#4B6C94;
+	}
+	p {
+		font-size: 22px;
+	}
+	li {
+		display: inline-block;
+		text-align: center;
+		margin-right: 20px;
+		&:last-child {
+			margin-right: 0px;
+		}
+	}
+	.link {
+		display: inline-block;
+		position: relative;
+		top:-10px;
+		padding-left: 10px;
+	}
+	span {
+
+	}
+	button {
+		background-color: #6383A8;
+		color:#fff;
+		height: 30px;
+	}
+	.share {
+		background: url(../img/video_actions.png) no-repeat 0px -26px;
+		padding-left: 15px;
+	}
+	.add {
+		background: url(../img/video_actions.png) no-repeat 0px 0px;
+		padding-left: 15px;
 	}
 }
-.player__loader {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: #ccc;
-  z-index: 20;
-  opacity: 1;
-  visibility: visible;
-  animation: hide-loader 200ms ease-out 5000ms forwards;
+.adds_video {
+	width: 700px;
+	background-color: #fff;
+	padding:20px;
+	p {
+		font-size: 18px;
+	}
 }
-@keyframes hide-loader {  
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
