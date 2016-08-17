@@ -33,24 +33,23 @@ p {
 span {
   display: block; }
 
-img {
-  display: inline-block; }
-
 hr {
   margin: 0; }
 
 .video_player {
   position: relative;
   width: 1000px;
-  background-color: #000; }
+  margin: auto; }
 
 .main_video {
   display: inline-block; }
 
 .scroll_video {
-  width: 320px;
+  background-color: #000;
+  width: 330px;
   height: 400px;
   position: fixed;
+  top: 0;
   display: inline-block;
   color: #fff;
   overflow: auto;
@@ -59,36 +58,32 @@ hr {
     width: 100px;
     height: 55px; }
 
-.preview {
-  display: inline-block; }
-
 .description {
   display: inline-block;
-  position: relative;
-  top: -20px; }
+  vertical-align: top; }
   .description .cnt {
     color: #7A7A7A; }
 
 .content_title {
-  border-bottom: 1px solid #DDDDDDFF;
+  border-right: thin solid grey;
+  display: inline-block;
   width: 700px;
   padding: 20px;
-  color: #4B6C94;
   background-color: #fff; }
   .content_title a {
     color: #4B6C94; }
   .content_title p {
-    font-size: 22px; }
+    font-size: 22px;
+    margin-bottom: 10px; }
   .content_title li {
     display: inline-block;
-    text-align: center;
+    vertical-align: center;
     margin-right: 20px; }
     .content_title li:last-child {
       margin-right: 0px; }
   .content_title .link {
     display: inline-block;
-    position: relative;
-    top: -10px;
+    vertical-align: top;
     padding-left: 10px; }
   .content_title button {
     background-color: #6383A8;
@@ -102,8 +97,43 @@ hr {
     padding-left: 15px; }
 
 .adds_video {
-  width: 700px;
-  background-color: #fff;
-  padding: 20px; }
+  padding-top: 20px; }
   .adds_video p {
-    font-size: 18px; }
+    font-size: 18px;
+    color: black; }
+
+.comment_block {
+  position: absolute;
+  color: #4B6C94;
+  width: 290px;
+  height: 100%;
+  display: inline-block;
+  background-color: #fff;
+  padding: 10px; }
+  .comment_block img {
+    width: 100px;
+    height: 55px; }
+
+.comment_bloc_comment {
+  background: #fff;
+  padding: 10px;
+  border-top-width: thin;
+  border-top-style: solid;
+  border-top-color: grey; }
+  .comment_bloc_comment img {
+    border-radius: 25px;
+    display: inline-block;
+    vertical-align: top; }
+
+.comment_block_inline {
+  display: inline-block; }
+  .comment_block_inline span {
+    padding-left: 10px; }
+  .comment_block_inline .nick_name {
+    color: #4B6C94; }
+  .comment_block_inline a {
+    padding-left: 10px; }
+
+.last > img {
+  width: 30px;
+  height: auto; }
