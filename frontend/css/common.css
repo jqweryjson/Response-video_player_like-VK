@@ -35,3 +35,6 @@ span {
 
 hr {
   margin: 0; }
+
+html {
+  min-width: 1200px; }
